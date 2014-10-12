@@ -1,0 +1,51 @@
+{
+  "name": "mongodb-autoincrement",
+  "version": "1.0.0",
+  "description": "Auto increment support for mongodb and mongoose",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TheRoSS/mongodb-autoincrement.git"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "mongoose": "*"
+  },
+  "devDependencies": {
+    "async": "*",
+    "mocha": "*",
+    "mongoose": "*"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "plugin",
+    "auto-increment",
+    "auto",
+    "increment",
+    "automatic",
+    "autoincrement",
+    "auto_increment",
+    "autoinc",
+    "auto-inc",
+    "auto_inc",
+    "pureautoinc",
+    "mongoose-pureautoinc"
+  ],
+  "author": {
+    "name": "Alexey Chistyakov",
+    "email": "ross@newmail.ru",
+    "url": ""
+  },
+  "contributors": [],
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha"
+  },
+  "bugs": {
+    "url": "https://github.com/codetunnel/mongodb-autoincrement/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "homepage": "https://github.com/codetunnel/mongodb-autoincrement",
+  "_id": "mongodb-autoincrement@1.0.0",
+  "dist": {}
+}
