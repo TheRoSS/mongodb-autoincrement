@@ -12,7 +12,6 @@
   },
   "devDependencies": {
     "async": "*",
-    "mocha": "*",
     "mongoose": "*"
   },
   "keywords": [
@@ -34,18 +33,19 @@
   "author": {
     "name": "Alexey Chistyakov",
     "email": "ross@newmail.ru",
-    "url": ""
+    "url": "http://heartless.su"
   },
   "contributors": [],
   "scripts": {
     "test": "node_modules/mocha/bin/mocha"
   },
   "bugs": {
-    "url": "https://github.com/codetunnel/mongodb-autoincrement/issues"
+    "url": "https://github.com/TheRoSS/mongodb-autoincrement/issues"
   },
   "readme": "",
   "readmeFilename": "README.md",
-  "homepage": "https://github.com/codetunnel/mongodb-autoincrement",
+  "homepage": "https://github.com/TheRoSS/mongodb-autoincrement",
+  "license": "MIT",
   "_id": "mongodb-autoincrement@1.0.0",
   "dist": {}
 }

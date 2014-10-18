@@ -92,7 +92,19 @@ exports.setDefaults = function (options) {
     }
 };
 
+/**
+ * Get next auto increment index for the given collection
+ * @param {MongodbNativeDriver} db
+ * @param {String} collectionName
+ * @param {String} [fieldName]
+ * @param {Function} callback
+ */
 function getNextId(db, collectionName, fieldName, callback) {
+    if (typeof fieldName == "function") {
+        callback = fieldName;
+        fieldName = null;
+    }
+
     fieldName = fieldName || getOption(collectionName, "field");
     var collection = db.collection(defaultSettings.collection);
     var step = getOption(collectionName, "step");
