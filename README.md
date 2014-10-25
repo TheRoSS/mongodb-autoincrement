@@ -16,10 +16,10 @@ The successive calls to this function return different values so you can safely 
 
 > getNextSequence(db, collectionName, fieldName, callback)
 
-db - mongodb-native driver connection object
-collectionName - name of the collection to get auto increment index for, string
-fieldName - name of the auto increment field [optional]
-callback - function (err, nextFreeIndex)
+* db - mongodb-native driver connection object
+* collectionName - name of the collection to get auto increment index for, string
+* fieldName - name of the auto increment field [optional]
+* callback - function (err, nextFreeIndex)
 
 ````js
 var MongoClient = require("mongodb").MongoClient;
@@ -42,10 +42,10 @@ The plugin can be applied to particular schema and globally.
 
 > mongoosePlugin(schema, options)
 
-schema - mongoose.Schema
-options - Object:
-    field - auto increment field name, default _id
-    step - auto increment step, default 1
+* schema - mongoose.Schema
+* options - Object:
+    * field - auto increment field name, default _id
+    * step - auto increment step, default 1
 
 #### With single schema plugin
 
