@@ -68,7 +68,7 @@ exports.mongoosePlugin = function (schema, options) {
             }
 
             exports.getNextSequence(doc.db.db, doc.collection.name, fieldName, function (err, result) {
-                doc._id = result;
+                doc[fieldName] = result;
                 next(err);
             });
         } else {
