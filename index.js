@@ -122,7 +122,7 @@ function getNextId(db, collectionName, fieldName, callback) {
                     callback(err);
                 }
             } else {
-                callback(null, result.seq);
+                callback(null, result.value.seq);
             }
         }
     );
@@ -133,4 +133,3 @@ function getOption(collectionName, optionName) {
         settings[collectionName][optionName] :
         defaultSettings[optionName];
 }
-
