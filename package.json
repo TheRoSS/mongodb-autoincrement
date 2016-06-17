@@ -1,6 +1,6 @@
 {
   "name": "mongodb-autoincrement",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Auto increment support for mongodb and mongoose",
   "repository": {
     "type": "git",
