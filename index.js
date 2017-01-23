@@ -117,7 +117,8 @@ function getNextId(db, collectionName, fieldName, callback) {
         function (err, result) {
             if (err) {
                 if (err.code == 11000) {
-                    process.nextTick(getNextId.bind(null, db, collectionName, fieldName, callback));
+                    if (err.message.indexOf('duplicate key') > -1) callback(err)
+                    else process.nextTick(getNextId.bind(null, db, collectionName, fieldName, callback));
                 } else {
                     callback(err);
                 }
