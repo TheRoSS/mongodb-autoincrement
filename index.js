@@ -55,7 +55,7 @@ exports.mongoosePlugin = function (schema, options) {
 
     if (schema.options._id) {
         var schemaField = {};
-        schemaField[fieldName] = {type: Number, unique: true, required: true};
+        schemaField[fieldName] = {type: Number, unique: true};
         schema.add(schemaField);
     }
 
